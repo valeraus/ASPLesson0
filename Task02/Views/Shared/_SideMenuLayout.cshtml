@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Side Menu</h2>
+        <ul>
+            <li><a asp-controller="Home" asp-action="Menu1">Menu 1</a></li>
+            <li><a asp-controller="Home" asp-action="Menu2">Menu 2</a></li>
+            <li><a asp-controller="Home" asp-action="Menu3">Menu 3</a></li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        @RenderBody()
+    </div>
+</div>
